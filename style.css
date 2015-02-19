@@ -1,0 +1,81 @@
+body {
+	background-color: #D6002E;
+}
+
+/* MAIN HEADER */
+header {
+	background: -webkit-linear-gradient(left, #F0E1E4, #BFB0B3);
+	font-size: 1.6em;
+	border-radius: 10px;
+	width: 510px;
+	margin: 20px auto;
+	color: black;
+}
+
+header h1 {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+
+/* SEARCH BAR AND SEARCH BUTTON */
+.panel-search {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.panel-search input[type='search'] {	
+	width: 360px;
+}
+
+/*  NEXT PAGE AND PREVIOUS PAGE BUTTONS */
+
+.panel-navigate {
+	display: block;
+	text-align: center;
+}
+
+.panel-navigate button {
+	margin: 10px;
+}
+
+/* THE DISPLAY SIZE DROP DOWN MENU*/
+.panel-display {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+/* container div for each individual video */
+.vid {
+	background-color: #E0D7D9;
+	padding: 20px 0;
+	margin: 30px auto;
+	width: 1400px;
+	border-radius: 20px;
+}
+
+/* iframe that holds the youtube video */
+
+.vid iframe {
+	display: block;
+	margin: 0 auto;
+}	
+
+/* container for information: video title, description, publish date */
+
+.infopanel {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 20px;
+}
+
+.infopanel small {
+	font-size: 1em;
+}
+
+.infopanel p, .infopanel h2, .infopanel a {
+	padding: 10px;
+}

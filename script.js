@@ -6,7 +6,7 @@ All code is in vanilla jS
 var searchBar   = document.querySelector('.search-bar');        // variable for search bar
 var searchBtn   = document.querySelector('.search-btn');        // variable for search button
 var nextPageBtn = document.querySelector('.next-page-btn');     // variable for next page button
-var prevPageBtn;                                                // variable for prev page button, leave 'undefined'
+var prevPageBtn = null;                                                // variable for prev page button, leave 'undefined'
 var mainContain = document.querySelector('.main-contain');      // mainContain is a div holding all videos
 var display = document.querySelector('.display-size');          // variable for the display size drop down menu
 var userQ;                                                      // variable for users search query term
@@ -99,11 +99,11 @@ function search(queryTerm, wantNext, wantPrev) {            // called with searc
                 pPage = resp.result.prevPageToken;          // save that value to pPage variable
 
                 
-                // At first, there isn't a prev page button in the DOM, and the prevPageBtn will be undefined.
-                // When a user goes to page 2 of results, this if statement will create/insert a button into the DOm
+                // At first, there isn't a prev page button in the DOM, and the prevPageBtn will be null.
+                // When a user goes to page 2 of results, this if statement will create/insert a button into the DOM
                 // and assign an event handler to call for a search for the previous page of results.
-                // Using an if statement should ensure that this button is created once, and not on page 2, 3, 4, 5, etc...
-                if ( typeof prevPageBtn === 'undefined') {
+                // Using an if statement should ensure that this button is created once, and not on every subsequent page 2, 3, 4, 5, etc...
+                if ( prevPageBtn === null ) {
                     prevPageBtn = document.createElement('button');
                     prevPageBtn.textContent = 'Previous';
                     document.querySelector('.panel-navigate').insertBefore( prevPageBtn, nextPageBtn);
@@ -114,13 +114,13 @@ function search(queryTerm, wantNext, wantPrev) {            // called with searc
                     });
                 }               
             }
-            // Else when we're on page 1, so there is no previous page property in the response data
-            // check that prevPageBtn has a value, means there is a prev page button in the DOM
-            // remove the previous page button from the DOM & set the variable to undefined
+            // Else when we're on page 1, so there is no previous page property in the response data.
+            // Check that prevPageBtn does not have value = null, this means there is a prev page button in the DOM.
+            // Then remove the previous page button from the DOM & re-set the prevPageBtn variable to value of null.
             else {
-                if(typeof prevPageBtn !== 'undefined') {
+                if(prevPageBtn !== null) {
                     document.querySelector('.panel-navigate').removeChild(prevPageBtn); 
-                    prevPageBtn = 'undefined';
+                    prevPageBtn = null;
                 }               
             }
 

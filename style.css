@@ -1,5 +1,5 @@
 body {
-	background-color: #D6002E;
+	background-color: #C21941;
 }
 
 /* MAIN HEADER */
@@ -15,6 +15,14 @@ header {
 header h1 {
 	text-align: center;
 	margin: 0;
+	padding: 10px 0;
+}
+
+.panel-main {
+	width: 510px;
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: #E0D7D9;
 	padding: 10px 0;
 }
 

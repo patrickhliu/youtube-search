@@ -8,3 +8,5 @@ Create a website where users can search for You Tube videos.
 
 Languages: HTML / CSS / vanilla JS
 3rd party: Google's YouTube API V3
+
+Github Page: http://pliu82.github.io/youtube-search

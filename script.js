@@ -98,7 +98,7 @@ function search(queryTerm, wantNext, wantPrev) {
             if( pageTrack.indexOf(nPage) === -1 ) {         // if the token isn't in the pageTrack array...
                 pageTrack.push(nPage);                      // add to array
             }
-            console.log(pageTrack);
+            
             currentPage = pageTrack.indexOf(nPage) + 2 - 1;             // calculate the current page number
             document.querySelector('.panel-page-number').innerHTML =    // insert page # into DOM
                 "<p>Page " + currentPage + "</p>" ;

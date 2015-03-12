@@ -177,10 +177,6 @@ function search(queryTerm, wantNext, wantPrev) {            // called with searc
                         videoWin.setAttribute('width', 1366);
                         videoWin.setAttribute('height', 768);
                         break;
-                    case '6':
-                        videoWin.setAttribute('width', 1600);
-                        videoWin.setAttribute('height', 900);
-                        break;
                 }
 
                 // infoPanel will be a div holding all of the video information we pulled.

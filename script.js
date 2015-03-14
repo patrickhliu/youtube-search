@@ -55,8 +55,8 @@ function loadAPI() {
                 search(userQ, false, false);                                    // execute search
              }
              else {
-                userQ = 'grumpy cat';                                           // else page is loaded first time
-                search( userQ, false, false);                                   // show grumpy cat videos
+                userQ = 'web development';                                      // else page is loaded first time
+                search( userQ, false, false);                                   // show web development videos
              }
         })
 }

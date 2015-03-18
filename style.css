@@ -30,6 +30,23 @@ body {
 	background-color: #C21941;
 }
 
+/* Warning for browsers with Javascript disabled */
+.no-script {
+	margin: 20px 0;
+}
+
+.no-script p {
+	width: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid #B58F14;
+	font-weight: bold;
+	background-color: #F5BC02;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
 /* MAIN HEADER */
 header {
 	background-color: #D7D7DB;

@@ -63,12 +63,17 @@ header h1 {
 	padding: 10px 0;
 }
 
-.panel-main {
+.panel-main, .panel-btm {
 	width: 510px;
 	margin: 0 auto;
 	border-radius: 12px;
 	background-color: #D7D7DB;
 	padding: 10px 0;
+}
+
+.panel-btm {
+	width: 310px;
+	margin-bottom: 100px;
 }
 
 /* Hide the previous page element by default with this class */
@@ -119,6 +124,7 @@ header h1 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.2em;
+	margin: 10px auto;
 }
 
 /* container div for each individual video */
